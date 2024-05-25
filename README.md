@@ -131,7 +131,7 @@ plot to show the count of incidents by manufacturer overall.
       labs(title = "Incidents by Manufacturer", x = "Manufacturer", y = "Number of Incidents") +
       theme_minimal()
 
-![](Final-Project_files/figure-markdown_strict/unnamed-chunk-2-1.png)
+![](https://github.com/lucasweyrich958/Airplane_Manufacturer_Analysis/blob/main/figures/plot1.png)
 
 ### Comparison Over Time
 
@@ -173,7 +173,7 @@ greater average incident count per year with Boeing than with Airbus.
                          labels = c("Airbus", "Boeing")) +
       theme_minimal()
 
-![](Final-Project_files/figure-markdown_strict/unnamed-chunk-3-1.png)
+![](https://github.com/lucasweyrich958/Airplane_Manufacturer_Analysis/blob/main/figures/plot2.png)
 
     ggplot(final_data_year) +
       geom_histogram(aes(x = Airbus, fill = "Airbus"), alpha = 0.7, bins = 20, color = "black") +
@@ -185,7 +185,7 @@ greater average incident count per year with Boeing than with Airbus.
       theme_minimal() +
       theme(legend.position = "top")
 
-![](Final-Project_files/figure-markdown_strict/unnamed-chunk-3-2.png)
+![](https://github.com/lucasweyrich958/Airplane_Manufacturer_Analysis/blob/main/figures/plot3.png)
 
     ggplot(final_data_long, aes(x = Manufacturer, y = Count, fill = Manufacturer)) +
       geom_boxplot(width = 0.5) +
@@ -199,7 +199,7 @@ greater average incident count per year with Boeing than with Airbus.
             legend.title = element_blank(),
             legend.text = element_text(size = 12))
 
-![](Final-Project_files/figure-markdown_strict/unnamed-chunk-3-3.png)
+![](https://github.com/lucasweyrich958/Airplane_Manufacturer_Analysis/blob/main/figures/plot4.png)
 
     final_data_year$time = as.Date(paste0(final_data_year$year, "-01-01"))
 
